@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head %}
+	<title>Social Viewer</title>
+{% endblock %}
+{% block content %}
+		<h1> Welcome, Social Viewer </h1>
+		<p> New Application </p>
+		<form action="/login" method="POST">
+			<input type="text" name="user" placeholder="Usrname" required>
+			<input type="password" name="pass" placeholder="Password" required>
+			<input type="submit" value="Login">
+		</form>
+
+		<p><b>Create An Account </b> <a href="/create_account">here</a></p>
+{% endblock %}
